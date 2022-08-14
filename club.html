@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons-1.9.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js" ></script>
+
+    <title>Club de l'AEENI</title>
+</head>
+<body>
+  <header id="header">
+    <div class="page" >
+      <br>
+    </div>
+    <nav class="navbar fixed-top navbar-expand-lg" id="navigation" >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo AEENI" width="100px"></a>
+        <button class="navbar-toggler" type="button" style="color: #FFB475;" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="bi bi-list" ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light" id="home" aria-current="page" href="index.html"><span class="bi bi-house-fill" ></span> Acceuil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#"><span class="bi bi-diagram-3-fill" ></span> Organismes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="partenaires.html"><span class="bi bi-people-fill" ></span> Partenaires</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="bi bi-globe" ></span> Clubs
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="club.html#c2e">C2E</a></li>
+                <li><a class="dropdown-item" href="club.html#linux">C3LF</a></li>
+                <li><a class="dropdown-item" href="club.html#cybersécuriter">Cybersécuriter</a></li>
+                <li><a class="dropdown-item" href="club.html#multimedia">Multimedia</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="bi bi-person-circle" ></span> Contacts
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://free.facebook.com/AssociationEtudiantENIInformatiqueFianarantsoa" target="_blank" ><span class="bi bi-facebook" id="fbico" ></span> Facebook</a></li>
+                <li><a class="dropdown-item" href="https://www.github.com/AEENI-UF" target="_blank" ><span class="bi bi-github" id="gtico" ></span> Github</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-flex" >
+            <input class="form-control me-2" type="text" placeholder="Recherche ..." id="srchvr">
+            <button class="btn btn-default" type="button" onclick="recherche()" id="srch"><span class="bi bi-search" ></span></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <br><br>
+  <div class="container">
+    <br><br><br>
+    <div class="row">
+      <div class="col-lg-4 col-md-12" id="logo">
+        <h2>Club d'Entraide de l'ENI</h2>
+          <img src="images/C2E.png" alt="logo C2E" class="rounded.circle"  width="300px" id="c2e"  >
+      </div>
+      
+      <div  class="col-lg-8 col-md-12"  id="texte" >
+          <p>
+              C2E ou Club d'Entraide de l'ENI est un club au sain de l'ENI fondé en 2011 par des étudiants pour les étudiants. Il rensemble les 
+              étudiants qui possèdent un vif intérêt du partage et des savoirs faire sur les nouvelles technologies.Leur programme se divise en 3 parties: <br>
+              <li>Assistance aux étudiants en première année:<p>organisation d'atélier tous les samedis où les aînes les aident sur différents
+                sujets auxquel ils ont des difficultés le tout dans un esprit d'entraide et d'échanges </p></li> <br>
+              <li>C2E Talks: <p>séance ouvert à tous les niveaux où C2E invite des proffessionels,généralement des anciensde l'ENI,à intervenir
+                sur des thèmes très variés (nouvelles technologies,experience proffessionelle,soft-skills,..)</p></li> <br>
+              <li>Compétitions:<p>l'organisation de diverses Compétitions est essentielle dans les dévelopements de chaque étudiant.Recemment,
+                C2E a organisé un tournoi d'algorithme,c'était une première mais on espère que cela contenuera. </p></li> <br>
+          </p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br><br><br><hr><br><br><br>
+  <div class="container" id="linux" >
+    <div class="row" >
+      <div class="col-lg-4 col-md-12" >
+        <h2>Club linux</h2>
+        <img src="images/C3LF.jpg" alt="C3LF" width="300px" >
+      </div>
+      <div class="col-lg-8 col-md-12" >
+        <p>Le Club Linux et Logiciels Libres Fianarantsoa ou C3LF siège à Tanambao Fianarantso. Il constitue àn l'heure actulle l'unique au sein de l'exprovince de Fianarantsoa.
+       On peut considerer ce club comme la vitrine et la mésure de l'avancée technologique des communautés libres à Madagasikara.
+       L'implatation du C3LF luin permet d'avoir des adhèrents informaticients des hauts niveaux favorisant les appuies.Supports techniques et aussi
+       assurant la perennité du club.Depuis sa création jusq'aujourd'huile,le C3LF sous le parrainage de Dr Fontaine RAFAMANTANANTSOA Directeurde l'ENI
+       a participé à plusieurs manifestations dans le domaine de l'informatique et realisé divers tutoriel et formations relatives à la vulgarisations
+       des logiciels libres et linux. 
+        </p>
+      </div>
+    </div>
+  </div>
+  <br><br><br><hr><br><br><br>
+  <div class="container" id="cybersécuriter" > 
+    <br><br>
+    <div class="row" >
+      <div class="col-lg-4 col-md-12" >
+        <h2>Club de cybersécuriter de l'ENI</h2>
+        <img  src="images/cybersécurity.jpg" alt="cybersécuriter" width="300px" >
+      </div>
+      <div class="col-lg-8 col-md-12" >
+        <p>ENI cybersecurity Fianarantsoa a été créerle 18 MIA 2018 sous le parrainage du Pr RAFAMANTANANTSOA Fontaine,c'est un club qui s'oriente dans le domaine de cybersecurité qui a pour mission de former et d'intégrer les étudiants dans le monde de sécurité informatique
+         en se partagant des informations, connaissances et techniques pour mieux sécuriser:plateforme,système,des applications,....<br>
+         Depuis son existance ,trois présidents se sont dèja succédes:HERCULE Ihasa (le créateur du club), RATEFIARSON Sarobidy et le président actuel
+         est RAVONIAINA Arnaud Juvincu.
+        </p>
+      </div>
+    </div>
+  </div>
+  <br><br><br><hr><br><br><br>
+  <div class="container" id="multimedia">
+    <div class="row">
+      <div class="col-lg-4 col-md-12" >
+        <h2>Club de MULTIMEDIA</h2>
+        <img src="images/Multimedia.jpg" alt="Multimedia" width="300px" >
+      </div>
+      <div class="col-lg-8 col-md-12" >
+        <p>Date de création:31 Mai 2005,slogan:"Partage-Communication-Evolution"<br><ul>président:<li>2005-2007:Andry Faly</li><li>
+          2008: Haja FAHALEOVANTENA </li> <li>2009:Erio</li><li>2018-2019:Toky</li><li>2020-2022:Mahenina RANDRIANIRINA</li></ul><br>
+        <ul>Réalisations:<li>Karaoke Hira Fanampiny complet</li><li>Video ENI 3D</li><li>Support Médiataque Event ENI</li><li>Storyboard & Cameraman
+          Filme Tania2 avec Meva Production </li><li>Logo AEENI (création originale de RANDRIANIRINA Mahenina)</li></ul></p>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="bi bi-arrow-bar-up" id="goupbtn" ></a>
+  <div>
+    <br><br><br>
+  </div>
+  <div class="container-fluid text-light tw-bold" style="background-color: gray;"  >
+    <p>Copyright AEENI 2022 </p>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
+

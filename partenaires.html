@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons-1.9.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js" ></script>
+    <title>AEENI Site web officiel</title>
+</head>
+<body>
+    <header id="header">
+      <div class="page" >
+        <br>
+      </div>
+      <nav class="navbar fixed-top navbar-expand-lg" id="navigation" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo AEENI" width="100px"></a>
+          <button class="navbar-toggler" type="button" style="color: #FFB475;" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="bi bi-list" ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-light" id="home" aria-current="page" href="index.html"><span class="bi bi-house-fill" ></span> Acceuil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#"><span class="bi bi-diagram-3-fill" ></span> Organismes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="partenaires.html"><span class="bi bi-people-fill" ></span> Partenaires</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="bi bi-globe" ></span> Clubs
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="club.html#c2e">C2E</a></li>
+                  <li><a class="dropdown-item" href="club.html#linux">C3LF</a></li>
+                  <li><a class="dropdown-item" href="club.html#cybersécuriter">Cybersécuriter</a></li>
+                  <li><a class="dropdown-item" href="club.html#multimedia">Multimedia</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="bi bi-person-circle" ></span> Contacts
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://free.facebook.com/AssociationEtudiantENIInformatiqueFianarantsoa" target="_blank" ><span class="bi bi-facebook" id="fbico" ></span> Facebook</a></li>
+                  <li><a class="dropdown-item" href="https://www.github.com/AEENI-UF" target="_blank" ><span class="bi bi-github" id="gtico" ></span> Github</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex" >
+              <input class="form-control me-2" type="text" placeholder="Recherche ..." id="srchvr">
+              <button class="btn btn-default" type="button" onclick="recherche()" id="srch"><span class="bi bi-search" ></span></button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <br><br><br><br><br>
+         <h1>
+         &nbsp;  Nos partenaires:
+        </h1>
+       <div class="container">
+          <div class="row" >
+            <div class="col-lg-4 col-md-12">
+             <img src="images/logo-arato.jpg" width="150px" alt="">
+            </div>
+            
+            <div  class="col-lg-8 col-md-12">  
+             <br><br> ARATO est une entreprise de services numérique(ESN) situé à Fianarantsoa.
+             Les services qu'il propose sont: urbanisation des SI, externalisation des services
+             informatiques, création d'application web et mobile, développement et 
+             implémentation des algorithmes IA, formation <br>Contact: 034 98 816 19  
+           </div>
+          </div>
+     </div>
+     <br><br><hr>
+
+     <div class="container">
+      <div class="row" >
+        <div class="col-lg-4 col-md-12">
+         <img src="images/Logo Main.png" width="150px" alt="">
+        </div>
+        <div  class="col-lg-8 col-md-12"> 
+        <br>  WeCours est une plateforme d'éducation en ligne, qui va changer votre vie! <br> <br>
+          Contact: 034 84 586 05 &nbsp; &nbsp;<a href="https://www.wecours.com">Visiter</a> 
+       </div>
+      </div>
+ </div>
+ <br><br><hr>
+
+ <div class="container">
+  <div class="row" >
+    <div class="col-lg-4 col-md-12">
+     <img src="images/akata logo.png" width="150px" alt="">
+    </div>
+    <div  class="col-lg-8 col-md-12"> 
+     <br> AKATA is an IT agency from Madagascar, a team of the best engineers and developers especially unearthe
+      <br> <br> Adresse: IV 324/3706 Isaha Fianarantsoa &nbsp;&nbsp;<a href="contact-akata@goavana.com">Contact</a>
+   </div>
+  </div>
+</div>
+<br><br><hr>
+
+<div class="container">
+  <div class="row" >
+    <div class="col-lg-4 col-md-12">
+     <img src="images/NGA.png" width="150px" alt="">
+    </div>
+    <div  class="col-lg-8 col-md-12"> 
+     <br> NG Academy est une académie de formation professionnelle situé à l'auberge Andohan'Ivory(1ère étage) Fianarantsoa Madagascar <br>
+       <br> Contact: 034 10 372 05
+    </div>
+  </div>
+</div>
+<br><br><hr>
+
+<div class="container">
+  <div class="row" >
+    <div class="col-lg-4 col-md-12">
+     <img src="images/Kalybot Logo.png" width="150px" alt="">
+    </div>
+    <div  class="col-lg-8 col-md-12"> 
+     <br> Kalybot est une startup malagasy de restauration situé à Tananarivo <br> <br>
+      Contact: 034 71 532 53;&nbsp;&nbsp;&nbsp; <a href="https://www.kalybot.com/">Visiter</a>
+   </div>
+  </div>
+</div>
+<br><br><hr>
+
+<div class="container">
+  <div class="row" >
+    <div class="col-lg-4 col-md-12">
+     <img src="images/Mahefa Numeric - Logo.png" width="150px" alt="">
+    </div>
+    <div  class="col-lg-8 col-md-12"> 
+      Mahefa Numeric est une agence digitale qui couvre l'ensemble 
+      des entreprises (cahier des charges, création de site e-commerce, 
+      vitrines, extranet, web app, référencement naturel, campagne d'emailing, 
+      inbound marketing, optimisation des taux de conversion...) <br> <br>
+      <a href="https://numeric.mahefa.company/">Visiter</a>  
+   </div>
+  </div>
+  </div>
+  <script src="js/script.js" ></script>
+  <a href="#" class="bi bi-arrow-bar-up" id="goupbtn" ></a>
+  <div>
+    <br><br><br>
+  </div>
+  <div class="container-fluid text-light tw-bold" style="background-color: gray;"  >
+    <p>Copyright AEENI 2022 </p>
+  </div>
+  </body>
+</html>
+    

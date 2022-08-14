@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons-1.9.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js" ></script>
+    <title>Evènements</title>
+</head>
+<body>
+    <header id="header">
+      <header id="header">
+        <div class="page" >
+          <br>
+        </div>
+        <nav class="navbar fixed-top navbar-expand-lg" id="navigation" >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo AEENI" width="100px"></a>
+            <button class="navbar-toggler" type="button" style="color: #FFB475;" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="bi bi-list" ></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-light" id="home" aria-current="page" href="index.html"><span class="bi bi-house-fill" ></span> Acceuil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#"><span class="bi bi-diagram-3-fill" ></span> Organismes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="partenaires.html"><span class="bi bi-people-fill" ></span> Partenaires</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="bi bi-globe" ></span> Clubs
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="club.html#c2e">C2E</a></li>
+                    <li><a class="dropdown-item" href="club.html#linux">C3LF</a></li>
+                    <li><a class="dropdown-item" href="club.html#cybersécuriter">Cybersécuriter</a></li>
+                    <li><a class="dropdown-item" href="club.html#multimedia">Multimedia</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="bi bi-person-circle" ></span> Contacts
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="https://free.facebook.com/AssociationEtudiantENIInformatiqueFianarantsoa" target="_blank" ><span class="bi bi-facebook" id="fbico" ></span> Facebook</a></li>
+                    <li><a class="dropdown-item" href="https://www.github.com/AEENI-UF" target="_blank" ><span class="bi bi-github" id="gtico" ></span> Github</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="d-flex" >
+                <input class="form-control me-2" type="text" placeholder="Recherche ..." id="srchvr">
+                <button class="btn btn-default" type="button" onclick="recherche()" id="srch"><span class="bi bi-search" ></span></button>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+  <br>
+ <br>
+
+    
+
+   <div class="container" id="hack" >
+    <h1>Evènements</h1>
+    <br>
+    <div class="row"><h2> Hackathon interne </h2>
+      <p>  &nbsp;L'AEENI a organisé plusieurs évènements parmi lesquelles on peut citer: 
+        hackathon interne (pour séléctionner les équipes qui allaient représenter l'école au HIU), 
+        rising newbies contest et dernièrement le DevHunt.</p> 
+      <div class="col-lg-4 col-md-12 ">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"  aria-label="Slide 1" ></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+              
+       <div class="carousel-inner">
+           <div class="carousel-item active">
+             <img src="images/event/c2e 1.jpg" class="d-block w-100" alt="...">
+           </div>
+           <div class="carousel-item">
+             <img src="images/event/c2e 2.jpg" class="d-block w-100" alt="...">
+           </div>
+           <div class="carousel-item">
+             <img src="images/event/c2e 4.jpg" class="d-block w-100" alt="...">
+           </div>
+           <div class="carousel-item">
+             <img src="images/event/c2e 5.JPG" class="d-block w-100" alt="...">
+           </div>
+         </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button> 
+       </div>
+      </div>
+
+     <div class="col-lg-4 col-md-12 ">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+           <div class="carousel-indicators">
+             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"  aria-label="Slide 1" ></button>
+             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+           </div>
+               
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/event/hackathon.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/event/hackathon2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/event/hackathon3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/event/hackathon4.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/event/hackathon5.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> 
+        </div>
+      </div>
+   
+      <div class="col-lg-4 col-md-12 ">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+           <div class="carousel-indicators">
+             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"  aria-label="Slide 1" ></button>
+             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+               
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/event/hac0.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/event/hac1.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/event/hac2.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/event/hac3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+         <  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> 
+        </div>
+   </div>
+     <br> <hr> <br>
+
+     <div class="container" id="basket" >
+      <div class="row"><h2>Basket Inter-fac Université de Fianarantsoa</h2>
+        <p>  &nbsp;A part celà, elle a participé au match inter-fac de l' Université de 
+          Fianarantsoa dont elle a emporté la 2ème place.</p> 
+        <div class="col-lg-4 col-md-12 ">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"  aria-label="Slide 1" ></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+                
+         <div class="carousel-inner">
+             <div class="carousel-item active">
+               <img src="images/event/basket.jpg" class="d-block w-100" alt="...">
+             </div>
+             <div class="carousel-item">
+               <img src="images/event/basket2.0.jpg" class="d-block w-100" alt="...">
+             </div>
+             <div class="carousel-item">
+               <img src="images/event/basket2.1.jpeg" class="d-block w-100" alt="...">
+             </div>
+            
+           </div>
+          <  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Previous</span>
+           </button>
+           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Next</span>
+           </button> 
+         </div>
+        </div>
+       <div class="col-lg-4 col-md-12 ">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+             <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"  aria-label="Slide 1" ></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+             
+              
+             </div>
+                 
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/event/basket2.3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/event/basket3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/event/basket4.jpeg" class="d-block w-100" alt="...">
+              </div>
+              
+              <div class="carousel-item">
+                <img src="images/event/basket5.1.jpg" height="320px" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/event/basket6.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/event/bqsket5.2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/event/basket7.jpg" class="d-block w-100" alt="...">
+              </div>
+              
+            </div>
+           <  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button> 
+          </div>
+        </div>
+     
+        <div class="col-lg-4 col-md-12 ">
+         <video src="images/event/spect.mp4" width="400px" controls></video>
+        </div>
+
+     <hr>
+     <br>
+
+
+     <div class="container" id="epc" >
+      <div class="row">
+        <h2> EPC (ENI Praising Christ) </h2>
+        <p>  &nbsp;L'AEENI a aussi un groupe de chorale qui adore la parole de Dieu en chantant.</p> 
+        <div class="col-lg-4 col-md-12 ">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"  aria-label="Slide 1" ></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              
+            </div>
+                
+         <div class="carousel-inner">
+             <div class="carousel-item active">
+               <img src="images/event/chorale.JPG" class="d-block w-100" alt="...">
+             </div>
+             <div class="carousel-item">
+               <img src="images/event/chorale3.JPG" class="d-block w-100" alt="...">
+             </div>
+             <div class="carousel-item">
+               <img src="images/event/chorale2.JPG" class="d-block w-100" alt="...">
+             </div>
+            
+           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Previous</span>
+           </button>
+           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Next</span>
+           </button> 
+         </div>
+        </div>
+  
+       <div class="col-lg-4 col-md-12 ">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+             <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"  aria-label="Slide 1" ></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+               
+             </div>
+                 
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/event/chorale1.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/event/cor1.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/event/cor3.JPG" class="d-block w-100" alt="...">
+              </div>
+           
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button> 
+          </div>
+        </div>
+     
+        <div class="col-lg-4 col-md-12 ">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+             <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"  aria-label="Slide 1" ></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+               
+            </div>
+                 
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/event/core6.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/event/cor5.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/event/cor4.JPG" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button> 
+          </div>
+     </div>
+     <a href="#" class="bi bi-arrow-bar-up" id="goupbtn" ></a>
+     <div>
+      <br><br><br>
+    </div>
+    <div class="container-fluid text-light tw-bold" style="background-color: gray;"  >
+      <p>Copyright AEENI 2022 </p>
+    </div>
+  <script src="js/script.js" ></script>
+  </body>
+</html>  
